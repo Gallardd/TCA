@@ -1,0 +1,81 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "MEJOR SHOOTER",
+      "description": "El mejor juego de disparos del año",
+      "videoUrl": "",
+      "games": ["battlefield_6", "arc_riders", "arena_breakout", "doom_the_dark_ages", "cod_bo7", "fragpunk"]
+    },
+    {
+      "id": 2,
+      "name": "MEJOR MULTIPLAYER",
+      "description": "El mejor juego multijugador del año",
+      "videoUrl": "",
+      "games": ["battlefield_6", "arc_riders", "elden_ring_nightreign", "repo", "peak", "rv_there_yet"]
+    },
+    {
+      "id": 3,
+      "name": "MEJOR INDIE",
+      "description": "El mejor juego independiente del año",
+      "videoUrl": "",
+      "games": ["ball_x_pit", "absolum", "hollow_knight_silksong", "blue_prince", "look_outside", "dispatch"]
+    },
+    {
+      "id": 4,
+      "name": "MEJOR LATINO",
+      "description": "El mejor juego desarrollado en Latinoamérica",
+      "videoUrl": "",
+      "games": ["despelote", "tormented_souls_2", "pipistrello_cursed_yoyo", "aila", "baki_hanma_blood_arena", "dreamcore"]
+    },
+    {
+      "id": 5,
+      "name": "MÁS ESPERADO",
+      "description": "El juego más esperado por la comunidad",
+      "videoUrl": "",
+      "games": ["half_life_3", "gta_vi", "resident_evil_9", "phantom_blade_zero", "pragmata", "reanimal"]
+    },
+    {
+      "id": 6,
+      "name": "MEJOR BANDA SONORA",
+      "description": "El juego con la mejor música y soundtrack",
+      "videoUrl": "",
+      "games": ["clair_obscur_expedition_33", "death_stranding_2", "deltarune", "hollow_knight_silksong", "blue_prince", "ghost_of_yotei"]
+    },
+    {
+      "id": 7,
+      "name": "MEJOR TERROR",
+      "description": "El mejor juego de terror del año",
+      "videoUrl": "",
+      "games": ["total_chaos", "post_trauma", "silent_hill_f", "luto", "routine", "whos_at_the_door"]
+    },
+    {
+      "id": 8,
+      "name": "MEJOR PUZZLES",
+      "description": "El mejor juego de puzzles y acertijos",
+      "videoUrl": "",
+      "games": ["the_roottrees_are_dead", "blue_prince", "split_fiction", "escape_simulator_2", "garten_of_banban_0", "the_seance_of_blake_manor"]
+    },
+    {
+      "id": 9,
+      "name": "MEJOR INDIE TERROR",
+      "description": "El mejor juego indie de terror",
+      "videoUrl": "",
+      "games": ["aila", "post_trauma", "luto", "routine", "heartworm", "whos_at_the_door"]
+    },
+    {
+      "id": 10,
+      "name": "MEJOR HISTORIA",
+      "description": "El juego con la mejor narrativa e historia",
+      "videoUrl": "",
+      "games": ["clair_obscur_expedition_33", "death_stranding_2", "silent_hill_f", "south_of_midnight", "kingdom_come_deliverance_2", "cronos_the_new_dawn"]
+    },
+    {
+      "id": 11,
+      "name": "GOTY",
+      "description": "El mejor juego del año",
+      "videoUrl": "",
+      "games": ["silent_hill_f", "clair_obscur_expedition_33", "death_stranding_2", "hollow_knight_silksong", "kingdom_come_deliverance_2", "ghost_of_yotei"]
+    }
+  ]
+}

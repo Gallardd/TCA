@@ -1,0 +1,116 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "VALORANT PLAYER",
+      "description": "Premio a los jugadores destacados de Valorant a lo largo del 2025.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["tatokhz", "chinardavibes", "ka_ssy", "lalygerald", "ximewilliams", "prin"]
+    },
+    {
+      "id": 2,
+      "name": "APEX PLAYER",
+      "description": "Premio a los jugadores más activos de Apex Legends durante el 2025.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["nightray_97", "daichu_iq", "rjcke", "maruuhchan", "madmaiik", "xcamorex"]
+    },
+    {
+      "id": 3,
+      "name": "LOL PLAYER",
+      "description": "Premio a los jugadores de League of Legends más destacado por su desempeño en 2025.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["pardk72", "camululis", "xthexneax", "tvnute", "agustiicosmica", "madokaka"]
+    },
+    {
+      "id": 4,
+      "name": "MARVEL PLAYER",
+      "description": "Premio a los jugadores más destacado en el Universo de Marvel Rivals del 2025.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["soypainn", "sgleen", "nightray_97", "zardecay", "evanfall", "guarisan"]
+    },
+    {
+      "id": 5,
+      "name": "DELTA PLAYER",
+      "description": "Premio a los jugadores de Delta Force más destacado por su actividad y rendimiento en 2025.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["lobotfps", "mira_sarada", "baltodermo", "benyiivt", "cuervonnn", "apikfps"]
+    },
+    {
+      "id": 6,
+      "name": "STREAMER FPS",
+      "description": "Reconocimiento a los streamers más influyentes del género FPS.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["octuc", "jotan8", "xfatefps", "peeluca_", "guarisan", "sgleen"]
+    },
+    {
+      "id": 7,
+      "name": "STREAMER RETRO",
+      "description": "Reconocimiento a los streamers que basaron su contenido en juegos Clásicos y Retros.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["fuffyfonty", "pomelorockr85", "shino_arg", "profesorteto", "copic__", "sluisina"]
+    },
+    {
+      "id": 8,
+      "name": "ESPORT PLAYER",
+      "description": "Premio a los jugadores destacado del año dentro del ámbito competitivo.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["brans", "kurevvv", "biryarg", "neazul_", "gelatita"]
+    },
+    {
+      "id": 9,
+      "name": "SPEEDRUNNER",
+      "description": "Premio al speedrunner más destacado del 2025 por sus récords y constancia.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["mattgael", "jokeruy_", "nevs", "missing", "esandreas", "iilancelm"]
+    },
+    {
+      "id": 10,
+      "name": "STREAMER DE TERROR",
+      "description": "Reconocimiento a los streamers más influyentes en el género de Terror.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["nadine_von_terror", "lu_madness", "owarii1re", "rebeccare", "alexsteinnx", "budin_marmolado"]
+    },
+    {
+      "id": 11,
+      "name": "VSTREAMER",
+      "description": "Reconocimiento a los VStreamers más destacados del año.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["benyiivt", "nadine_von_terror", "ereyla", "sir_russel", "starslight_24", "leoboosted"]
+    },
+    {
+      "id": 12,
+      "name": "STREAMER ARTÍSTICO",
+      "description": "Reconocimiento a los streamers basados en su Arte y Creatividad.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["malditamar", "kiaris", "ereyla", "starslight_24", "ornasha", "kaele"]
+    },
+    {
+      "id": 13,
+      "name": "CREADOR DE CONTENIDO",
+      "description": "Reconocimiento a los mejores y más activos Creadores de Contenido en las redes sociales (TikTok/Instagram/Youtube).",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["tasher", "luchimichurri_", "wichitagames", "zardecay", "owarii1re", "kronopia"]
+    },
+    {
+      "id": 14,
+      "name": "STREAMER IRL",
+      "description": "Reconocimiento a los streamers más destacados del año en contenido IRL y Just Chatting.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["luchimichurri_", "zafiro", "gashega", "wichitagames", "canvic", "acaviciando"]
+    },
+    {
+      "id": 15,
+      "name": "STREAMER VARIEDAD",
+      "description": "Reconocimiento a los streamers más destacados por su diversidad de contenido.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["samurai", "tasher", "zardecay", "tindroyes", "acaviciando", "nunezknight"]
+    },
+    {
+      "id": 16,
+      "name": "STREAMER DEL AÑO",
+      "description": "Premio al streamer más destacado del año por impacto, constancia, comunidad y crecimiento.",
+      "videoUrl": "dQw4w9WgXcQ",
+      "participants": ["apikfps", "mira_sarada", "tatokhz", "luchimichurri_", "esandreas", "shino_arg"]
+    }
+  ]
+}

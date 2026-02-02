@@ -1,6 +1,53 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+/* Fuentes personalizadas */
+@font-face {
+  font-family: 'Gellix';
+  src: url('/assets/fonts/Gellix-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('/assets/fonts/Louis George Cafe.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('/assets/fonts/Louis George Cafe Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Louis George Cafe';
+  src: url('/assets/fonts/Louis George Cafe Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Custom theme - migrated from tailwind.config.js */
+@theme {
+  --color-primary: #2ACDDC;
+  --color-secondary: #FF9F59;
+  --color-black: #171717;
+  --color-white: #FAFAFA;
+  --background-image-main: url('/assets/web-bg.png');
+  --font-family-gellix: 'Gellix', sans-serif;
+  --font-family-louis: 'Louis George Cafe', sans-serif;
+}
+
+/* Aplicar Gellix como fuente principal */
+html, body {
+  font-family: 'Gellix', sans-serif;
+}
 
 /*
  * Oldschool, top left anchored repeating backgrounds should be opt-in instead
@@ -10,7 +57,6 @@
 *::before,
 *::after {
 	min-width: 0;
-	min-height: 0;
 	background-position: center center;
 	background-repeat: no-repeat;
 	object-position: center center;
