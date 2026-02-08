@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { supabase } from "../../supabaseClient";
 import { toast } from "sonner";
 import LoginScreen from "../LoginScreen/LoginScreen";
@@ -9,11 +10,23 @@ import VotingGamesSection from "../VotingGamesSection/VotingGamesSection";
 const STREAMERS_TABLE = import.meta.env.VITE_SUPABASE_STREAMERS_NAME;
 const GAMES_TABLE = import.meta.env.VITE_SUPABASE_GAMES_NAME;
 
-function VotingApp() {
+function VotingApp({ initialVoteType }) {
+	const navigate = useNavigate();
 	const [user, setUser] = useState(null);
 	const [currentVoteType, setCurrentVoteType] = useState(null);
 	const [hasVoted, setHasVoted] = useState(false);
 	const [loading, setLoading] = useState(true);
+
+	// Establecer tipo de voto inicial desde URL
+	useEffect(() => {
+		if (initialVoteType && user) {
+			if (initialVoteType === "streamers") {
+				setCurrentVoteType("streamers");
+			} else if (initialVoteType === "juegos") {
+				setCurrentVoteType("games");
+			}
+		}
+	}, [initialVoteType, user]);
 
 	// Verificar si el usuario ya está autenticado
 	useEffect(() => {
@@ -83,7 +96,7 @@ function VotingApp() {
 			}
 
 			toast.success("¡Votos registrados con éxito!");
-			setCurrentVoteType(null);
+			navigate("/");
 		} catch (error) {
 			toast.error("Ocurrió un error inesperado. Por favor, intenta nuevamente.");
 		}
@@ -107,7 +120,7 @@ function VotingApp() {
 	// Loading inicial
 	if (loading && !user) {
 		return (
-			<div className="flex items-center justify-center h-screen">
+			<div className="flex items-center justify-center min-h-[60vh]">
 				<p className="text-xl text-white">Cargando...</p>
 			</div>
 		);
@@ -121,31 +134,37 @@ function VotingApp() {
 	// Selección de tipo de votación
 	if (!currentVoteType) {
 		return (
-			<main className='flex flex-col items-center justify-center h-screen gap-8 p-4 text-center bg-[#000816]/50 rounded-lg shadow-md backdrop-blur-md'>
+			<main className='flex flex-col items-center justify-center min-h-[60vh] gap-8 p-8 my-8 mx-auto text-center bg-[#000816]/50 rounded-lg shadow-md backdrop-blur-md max-w-xl w-full'>
 				<h1 className='text-4xl font-bold text-primary'>
 					¡Bienvenido a los Chinchilla Awards!
 				</h1>
 				<p className='text-lg text-white'>
 					Hola <span className="font-semibold">{user.email}</span>, selecciona el tipo de votación.
 				</p>
-				<div className='flex flex-col gap-4'>
+				<div className='flex flex-col gap-4 w-full'>
 					<button
 						onClick={() => setCurrentVoteType("streamers")}
-						className='px-6 py-3 text-lg font-semibold text-black rounded-lg bg-primary hover:opacity-80 transition-opacity'
+						className='px-6 py-3 text-lg font-medium text-black rounded-lg bg-primary hover:opacity-80 transition-opacity'
 					>
-						🎥 Votar Categorías Streamers
+						Votar Categorías Streamers
 					</button>
 					<button
 						onClick={() => setCurrentVoteType("games")}
-						className='px-6 py-3 text-lg font-semibold text-white rounded-lg bg-secondary hover:opacity-80 transition-opacity'
+						className='px-6 py-3 text-lg font-medium text-black rounded-lg bg-primary hover:opacity-80 transition-opacity'
 					>
-						🎮 Votar Categorías Juegos
+						Votar Categorías Juegos
 					</button>
 					<button
 						onClick={handleLogout}
-						className='px-6 py-3 text-lg font-semibold text-white border rounded-lg border-secondary hover:bg-secondary/20 transition-colors'
+						className='px-6 py-3 text-lg font-medium text-white border rounded-lg border-primary hover:bg-primary/20 transition-colors'
 					>
 						Cerrar sesión
+					</button>
+					<button
+						onClick={() => navigate("/")}
+						className='px-6 py-3 text-lg font-medium text-white/70 hover:text-white transition-colors'
+					>
+						← Volver al Inicio
 					</button>
 				</div>
 			</main>
@@ -155,7 +174,7 @@ function VotingApp() {
 	// Cargando estado de votación
 	if (loading) {
 		return (
-			<div className="flex items-center justify-center h-screen">
+			<div className="flex items-center justify-center min-h-[60vh]">
 				<p className="text-xl text-white">Verificando votos...</p>
 			</div>
 		);
@@ -164,16 +183,16 @@ function VotingApp() {
 	// Ya votó en esta sección
 	if (hasVoted) {
 		return (
-			<main className='flex flex-col items-center justify-center h-screen p-4 text-center bg-[#000816]/50 rounded-lg shadow-md backdrop-blur-md'>
+			<main className='flex flex-col items-center justify-center min-h-[60vh] p-8 my-8 mx-auto text-center bg-[#000816]/50 rounded-lg shadow-md backdrop-blur-md max-w-xl w-full'>
 				<h1 className='text-4xl font-bold text-primary'>¡Ya votaste en esta sección!</h1>
 				<p className='mt-4 text-lg text-white'>
 					Gracias por participar en los Chinchilla Awards.
 				</p>
 				<button
-					onClick={() => setCurrentVoteType(null)}
+					onClick={() => navigate("/")}
 					className='px-6 py-3 mt-6 text-lg font-semibold text-black rounded-lg bg-primary hover:opacity-80 transition-opacity'
 				>
-					Volver a la Selección
+					Volver al Inicio
 				</button>
 			</main>
 		);
@@ -181,17 +200,17 @@ function VotingApp() {
 
 	// Votación activa
 	return (
-		<main className='flex flex-col items-start min-h-svh gap-6 py-12 px-4'>
+		<main className='flex flex-col items-start w-full gap-6 py-12'>
 			{currentVoteType === "streamers" && (
 				<VotingStreamersSection
 					onVotesSubmit={handleVote}
-					goBack={() => setCurrentVoteType(null)}
+					goBack={() => navigate("/")}
 				/>
 			)}
 			{currentVoteType === "games" && (
 				<VotingGamesSection
 					onVotesSubmit={handleVote}
-					goBack={() => setCurrentVoteType(null)}
+					goBack={() => navigate("/")}
 				/>
 			)}
 		</main>

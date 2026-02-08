@@ -68,12 +68,18 @@
     { "id": "luchimichurri_", "name": "LUCHIMICHURRI_", "displayName": "LUCHI", "photo": "/assets/participants-pictures/CC-Luchimichurri_.png" },
     { "id": "wichitagames", "name": "WICHITAGAMES", "displayName": "WICHITA", "photo": "/assets/participants-pictures/CC-WichitaGames.png" },
     { "id": "kronopia", "name": "KRONOPIA", "displayName": "KRONO", "photo": "/assets/participants-pictures/CC-Kronopia.png" },
-    { "id": "zafiro", "name": "ZAFIRO", "displayName": "ZAFI", "photo": "/assets/participants-pictures/IRL-Gashega.png" },
+    { "id": "zafiro", "name": "ZAFIRO", "displayName": "ZAFI", "photo": "/assets/participants-pictures/IRL-Zafiro.png" },
     { "id": "gashega", "name": "GASHEGA", "displayName": "GASHEGA", "photo": "/assets/participants-pictures/IRL-Gashega.png" },
     { "id": "canvic", "name": "CANVIC", "displayName": "CANVIC", "photo": "/assets/participants-pictures/IRL-Canvic.png" },
     { "id": "acaviciando", "name": "ACAVICIANDO", "displayName": "ACAVICIANDO", "photo": "/assets/participants-pictures/IRL-AcaViciando.png" },
     { "id": "samurai", "name": "SAMURAI", "displayName": "SAMURAI", "photo": "/assets/participants-pictures/Variedad-Samurai.png" },
     { "id": "tindroyes", "name": "TINDROYES", "displayName": "TINDROYES", "photo": "/assets/participants-pictures/Variedad-Tindroyes.png" },
-    { "id": "nunezknight", "name": "NUNEZKNIGHT", "displayName": "NUNEZ", "photo": "/assets/participants-pictures/Variedad-NunezKnight.png" }
+    { "id": "nunezknight", "name": "NUNEZKNIGHT", "displayName": "NUNEZ", "photo": "/assets/participants-pictures/Variedad-NunezKnight.png" },
+    { "id": "mateiwi", "name": "MATEIWI", "displayName": "CLIP DURISIMO", "photo": "/assets/participants-pictures/COTY-Mateiwi.png" },
+    { "id": "lemaple", "name": "LEMAPLE", "displayName": "POESÍA AL *", "photo": "/assets/participants-pictures/COTY-LeMaple.png" },
+    { "id": "mattgael_buto", "name": "MATTGAEL", "displayName": "SONO MUY BUTO", "photo": "/assets/participants-pictures/Speedrun-MattGael.png" },
+    { "id": "tarolrpm", "name": "TAROLRPM", "displayName": "PASO ALGO RARO", "photo": "/assets/participants-pictures/COTY-TaroLRPM.png" },
+    { "id": "nightray_volar", "name": "NIGHTRAY_97", "displayName": "SÉ QUE PUEDO VOLAR", "photo": "/assets/participants-pictures/Apex-Nightray_97.png" },
+    { "id": "nightray_callardgrejo", "name": "NIGHTRAY_97", "displayName": "CALLARDGREJO", "photo": "/assets/participants-pictures/Apex-Nightray_97.png" }
   ]
 }

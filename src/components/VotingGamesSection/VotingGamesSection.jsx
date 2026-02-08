@@ -74,7 +74,7 @@ function VotingGamesSection({ onVotesSubmit, goBack }) {
 			</div>
 
 			{/* Contenido principal */}
-			<main className="flex flex-col flex-1 w-full max-w-[1600px] px-4 pt-6 mx-auto md:px-8">
+			<main className="flex flex-col flex-1 w-full max-w-7xl pt-6 mx-auto">
 				{/* Header: Título + Navegación */}
 				<header className="flex flex-col gap-2 mb-3 md:flex-row md:items-start md:justify-between md:gap-3 md:mb-4 shrink-0">
 					{/* Título y descripción */}
