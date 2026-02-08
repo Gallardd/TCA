@@ -138,8 +138,8 @@ function VotingGamesSection({ onVotesSubmit, goBack }) {
 				</header>
 
 				{/* Tarjetas de votación - ocupan todo el espacio restante */}
-				<section className="flex flex-col flex-1">
-					<div className="grid py-10 grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3">
+				<section className="flex flex-col">
+					<div className="grid py-4 md:py-10 grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3 md:gap-3">
 						{games.map((game) => {
 							const isSelected = votes[currentCategoryIndex].selectedGame === game.id;
 
@@ -147,7 +147,7 @@ function VotingGamesSection({ onVotesSubmit, goBack }) {
 								<div
 									key={game.id}
 									onClick={() => handleVoteChange(game.id)}
-									className={`relative w-full flex flex-col cursor-pointer transition-all duration-300 overflow-hidden min-h-[420px] ${
+									className={`relative w-full flex flex-col cursor-pointer transition-all duration-300 overflow-hidden min-h-[280px] md:min-h-[420px] ${
 										isSelected
 											? "-translate-y-1 grayscale-0"
 											: "grayscale hover:grayscale-0 hover:-translate-y-1 opacity-70 hover:opacity-100"

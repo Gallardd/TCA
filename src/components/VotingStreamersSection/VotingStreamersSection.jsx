@@ -139,9 +139,9 @@ function VotingStreamersSection({ onVotesSubmit, goBack }) {
 
 				{/* Contenedor flexible para video y tarjetas */}
 				<div className="flex flex-col flex-1 gap-4">
-					{/* Video de presentación - oculto en mobile */}
+					{/* Video de presentación */}
 					{currentCategory.videoUrl && (
-						<section className="justify-center py-4 hidden w-full md:flex shrink-0">
+						<section className="flex justify-center py-2 md:py-4 w-full shrink-0">
 							<div className="w-full max-w-xl overflow-hidden aspect-[16/9]">
 								<iframe
 									src={`https://www.youtube.com/embed/${currentCategory.videoUrl}`}
@@ -154,8 +154,8 @@ function VotingStreamersSection({ onVotesSubmit, goBack }) {
 					)}
 
 					{/* Tarjetas de votación */}
-					<section className="flex flex-col flex-1">
-						<div className="grid flex-1 grid-cols-3 gap-2 md:grid-cols-6 md:gap-3 py-4">
+					<section className="flex flex-col">
+						<div className="grid grid-cols-2 gap-2 md:grid-cols-6 md:gap-3 py-2 md:py-4">
 							{participants.map((participant) => {
 								const isSelected = votes[currentCategoryIndex].selectedParticipant === participant.id;
 								// Nombre corto improvisado (primer nombre o primeras letras)
