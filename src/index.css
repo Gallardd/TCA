@@ -44,6 +44,82 @@
   --font-family-louis: 'Louis George Cafe', sans-serif;
 }
 
+/* AboutTeam styles */
+.about-team-section {
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 2rem 1rem;
+}
+.about-team-title {
+  font-family: var(--font-family-gellix);
+  font-size: 2.5rem;
+  color: var(--color-primary);
+  text-align: center;
+  margin-bottom: 2rem;
+  letter-spacing: 0.05em;
+}
+.about-team-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+@media (min-width: 600px) {
+  .about-team-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.about-team-card {
+  background: rgba(23,23,23,0.85);
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.5rem;
+  transition: transform 0.2s;
+}
+.about-team-card:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+.about-team-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  border: 3px solid var(--color-primary);
+  background: var(--color-black);
+}
+.about-team-info {
+  text-align: center;
+}
+.about-team-name {
+  font-family: var(--font-family-gellix);
+  font-size: 1.3rem;
+  color: var(--color-secondary);
+  margin-bottom: 0.5rem;
+}
+.about-team-desc {
+  font-family: var(--font-family-louis);
+  font-size: 1rem;
+  color: var(--color-white);
+  line-height: 1.5;
+}
+@media (min-width: 900px) {
+  .about-team-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+  }
+  .about-team-img {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+  .about-team-info {
+    text-align: left;
+  }
+}
+
 /* Aplicar Gellix como fuente principal */
 html, body {
   font-family: 'Gellix', sans-serif;
