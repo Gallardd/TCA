@@ -10,7 +10,7 @@ import About from "./pages/About/About";
 function App() {
 	return (
 		<BrowserRouter>
-			<main className="relative bg-main min-h-svh min-w-svw overflow-x-hidden">
+			<main className="relative bg-main bg-cover min-h-svh min-w-svw overflow-x-hidden">
 				{/* Overlay oscuro */}
 				<div className="absolute inset-0 bg-black/40 pointer-events-none" />
 				<div className="relative z-10 flex flex-col min-h-svh">
