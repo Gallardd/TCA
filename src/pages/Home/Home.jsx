@@ -10,8 +10,8 @@ function Home() {
 					<div className="aspect-video w-full rounded-lg overflow-hidden shadow-2xl">
 						<iframe
 							className="w-full h-full"
-							src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-							title="The Chinchilla Awards"
+							src="https://www.youtube.com/embed/cp5KxuR4rrI"
+							title="The Chinchilla Awards 2026"
 							frameBorder="0"
 							allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
 							allowFullScreen

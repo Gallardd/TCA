@@ -1,11 +1,24 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-	const [isMenuOpen, setIsMenuOpen] = useState(false);
+		const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-	const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-	const closeMenu = () => setIsMenuOpen(false);
+		// Prevent body scroll when menu is open (mobile)
+		React.useEffect(() => {
+			if (isMenuOpen) {
+				document.body.style.overflow = 'hidden';
+			} else {
+				document.body.style.overflow = '';
+			}
+			// Clean up on unmount
+			return () => {
+				document.body.style.overflow = '';
+			};
+		}, [isMenuOpen]);
+
+		const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+		const closeMenu = () => setIsMenuOpen(false);
 
 	return (
 		<>
