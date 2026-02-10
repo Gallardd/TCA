@@ -5,14 +5,14 @@
       "name": "MEJOR SHOOTER",
       "description": "El mejor juego de disparos del año",
       "videoUrl": "",
-      "games": ["battlefield_6", "arc_riders", "arena_breakout", "doom_the_dark_ages", "cod_bo7", "fragpunk"]
+      "games": ["battlefield_6", "arc_raiders", "arena_breakout", "doom_the_dark_ages", "cod_bo7", "fragpunk"]
     },
     {
       "id": 2,
       "name": "MEJOR MULTIPLAYER",
       "description": "El mejor juego multijugador del año",
       "videoUrl": "",
-      "games": ["battlefield_6", "arc_riders", "elden_ring_nightreign", "repo", "peak", "rv_there_yet"]
+      "games": ["battlefield_6", "arc_raiders", "elden_ring_nightreign", "repo", "peak", "rv_there_yet"]
     },
     {
       "id": 3,

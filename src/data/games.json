@@ -1,7 +1,7 @@
 {
   "games": [
     { "id": "battlefield_6", "name": "Battlefield 6", "image": "/assets/games-pictures/Battlefield 6.jpg" },
-    { "id": "arc_riders", "name": "Arc Riders", "image": "/assets/games-pictures/Arc Riders.jpg" },
+    { "id": "arc_raiders", "name": "Arc Raiders", "image": "/assets/games-pictures/Arc Riders.jpg" },
     { "id": "arena_breakout", "name": "Arena Breakout", "image": "/assets/games-pictures/Arena-Breakout.jpg" },
     { "id": "doom_the_dark_ages", "name": "Doom: The Dark Ages", "image": "/assets/games-pictures/Doom The Dark Ages.jpg" },
     { "id": "cod_bo7", "name": "COD: BO 7", "image": "/assets/games-pictures/Call of Duty Black Ops 7.jpg" },

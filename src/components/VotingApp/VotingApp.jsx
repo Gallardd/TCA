@@ -32,7 +32,6 @@ function VotingApp({ initialVoteType }) {
 	useEffect(() => {
 		// Primero suscribirse a cambios de auth (esto captura el token del redirect)
 		const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
-			console.log("Auth event:", event, session?.user?.email);
 			setUser(session?.user ?? null);
 			setLoading(false);
 		});
